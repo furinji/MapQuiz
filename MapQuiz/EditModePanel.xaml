@@ -1,0 +1,43 @@
+﻿<UserControl xmlns:my="clr-namespace:MapQuiz"  x:Class="MapQuiz.EditModePanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="400">
+    <Grid Name="MainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="140"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Name="MapViewArea" Margin="5,5,0,5">
+                
+            </Grid>
+            <DockPanel Grid.Row="1" Margin="5,0,0,5">
+                <Grid DockPanel.Dock="Left">
+                    <my:MapOperationPanel x:Name="mapOperationPane1" />
+                </Grid>
+                <!--<Button DockPanel.Dock="Left" Content="Fit" Name="button_fit" Width="40" />
+                <Button DockPanel.Dock="Left" Content="-" Name="button_small" Width="40" />
+                <Button DockPanel.Dock="Left" Content="等倍" Name="button_original" Width="40" />
+                <Button DockPanel.Dock="Left" Content="+" Name="button_large" Width="40" />-->
+                <Grid DockPanel.Dock="Left" Width="10"/>
+                <Button DockPanel.Dock="Left" Content="Img" Name="button_LoadImage" Width="40" />
+                <Button DockPanel.Dock="Left" Content="Save" Name="button_Save" Width="40" />
+                <Button DockPanel.Dock="Left" Content="Load" Name="button_Load" Width="40" />
+                <my:ToggleButton DockPanel.Dock="Right" x:Name="toggle_Hand" Text="Hand" Width="45" />
+                <my:ToggleButton DockPanel.Dock="Right" x:Name="toggle_Add" Text="Add" Width="45" />
+                <my:ToggleButton DockPanel.Dock="Right" x:Name="toggle_Select" Text="Select" Width="45" />
+                <Grid DockPanel.Dock="Left" Width="Auto"/>
+            </DockPanel>
+        </Grid>
+        <Grid Grid.Column="1" Name="InterfacePanelArea">
+            
+        </Grid>
+    </Grid>
+</UserControl>

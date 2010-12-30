@@ -1,0 +1,13 @@
+﻿<local:QuestionItemView x:Class="MapQuiz.EditPointQuestionItemView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:local="clr-namespace:MapQuiz"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="16" Width="16">
+    <Grid>
+        <Ellipse Fill="White" Opacity="0.5" />
+        <Ellipse Stroke="Gray" StrokeThickness="2" />
+        <Ellipse Name="Center" Fill="Red" Margin="4,4,4,4" Opacity="0.7" />
+    </Grid>
+</local:QuestionItemView>

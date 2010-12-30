@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="MapQuiz.QuizModeQuestionItemView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="16" Width="16">
+    <Grid Name="Root" Opacity="0.7" MouseLeftButtonDown="Root_MouseLeftButtonDown">
+        <Ellipse Name="Body" Fill="RoyalBlue" />
+        <Ellipse Stroke="White" Margin="2,2,2,2" StrokeThickness="2" />
+    </Grid>
+</UserControl>
